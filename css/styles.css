@@ -20,3 +20,7 @@ h5,
 h6 {
   font-weight: 500;
 }
+
+.container {
+  padding: 0 30px;
+}
