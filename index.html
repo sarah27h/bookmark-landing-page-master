@@ -15,19 +15,9 @@
     />
 
     <link href="css/styles.css" rel="stylesheet" />
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
+    <!-- start navbar -->
     <header class="navbar container">
       <a class="logo" href="#"><img src="images/logo-bookmark.svg" alt="Bookmark company logo"/></a>
       <input
@@ -37,20 +27,25 @@
         alt="Menu button"
       />
       <nav class="navigation">
-        <ul class="menu">
-          <li class="menu__item"><a href="#">Features</a></li>
-          <li class="menu__item"><a href="#">Pricing</a></li>
-          <li class="menu__item"><a href="#">Contact</a></li>
-          <li class="menu__item">
-            <a class="menu__item" href="#">Login</a>
+        <ul class="navigation__menu">
+          <li class="navigation__item"><a href="#">Features</a></li>
+          <li class="navigation__item"><a href="#">Pricing</a></li>
+          <li class="navigation__item"><a href="#">Contact</a></li>
+          <li class="navigation__item">
+            <a class="navigation__item" href="#">Login</a>
           </li>
         </ul>
       </nav>
     </header>
+    <!-- end navbar -->
+
+    <!-- start container -->
     <div class="container">
+      <!-- start main -->
       <main>
+        <!-- start intro -->
         <section class="intro">
-          <div class="intro__text">
+          <div>
             <h1>A Simple Bookmark Manager</h1>
             <p>
               A clean and simple interface to organize your favourite websites. Open a new browser
@@ -59,23 +54,26 @@
             <a class="" href="#">Get it on Chrome</a>
             <a class="" href="#">Get it on Firefox</a>
           </div>
-          <div class="intro__img">
+          <div>
             <img src="images/illustration-hero.svg" alt="Illustration for bookmark app interface" />
           </div>
         </section>
+        <!-- end intro -->
+
+        <!-- start features -->
         <section class="features">
           <h2>Features</h2>
           <p>
             Our aim is to make it quick and easy for you to access your favourite websites. Your
             bookmarks sync between your devices so you can access them on the go.
           </p>
-          <div class="tabs">
+          <div>
             <a><h3>Simple Bookmarking</h3></a>
             <a><h3>Speedy Searching</h3></a>
             <a><h3>Easy Sharing</h3></a>
           </div>
           <div>
-            <div class="tabs__tab">
+            <div>
               <h3>Bookmark in one click</h3>
               <p>
                 Organize your bookmarks however you like. Our simple drag-and-drop interface gives
@@ -86,7 +84,7 @@
             <img src="images/illustration-features-tab-1.svg" alt="" />
           </div>
           <div>
-            <div class="tabs__tab">
+            <div>
               <h3>Intelligent search</h3>
               <p>
                 Our powerful search feature will help you find saved sites in no time at all. No
@@ -97,7 +95,7 @@
             <img src="images/illustration-features-tab-2.svg" alt="" />
           </div>
           <div>
-            <div class="tabs__tab">
+            <div>
               <h3>Share your bookmarks</h3>
               <p>
                 Easily share your bookmarks and collections with others. Create a shareable link
@@ -108,38 +106,44 @@
             <img src="images/illustration-features-tab-3.svg" alt="" />
           </div>
         </section>
+        <!-- end features -->
+
+        <!-- start download -->
         <section class="download">
           <h2>Download the extension</h2>
           <p>
             We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite
             you’d like us to prioritize.
           </p>
-          <div class="download__card">
+          <div>
             <img src="images/logo-chrome.svg" alt="Chrome Logo" />
             <h3>Add to Chrome</h3>
             <p>Minimum version 62</p>
             <a>Add & Install Extension</a>
           </div>
-          <div class="download__card">
+          <div>
             <img src="images/logo-chrome.svg" alt="Chrome Logo" />
             <h3>Add to Firefox</h3>
             <p>Minimum version 55</p>
             <a>Add & Install Extension</a>
           </div>
-          <div class="download__card">
+          <div>
             <img src="images/logo-chrome.svg" alt="Chrome Logo" />
             <h3>Add to Opera</h3>
             <p>Minimum version 46</p>
             <a>Add & Install Extension</a>
           </div>
         </section>
+        <!-- end download -->
+
+        <!-- start questions -->
         <section class="questions">
           <h2>Frequently Asked Questions</h2>
           <p>
             Here are some of our FAQs. If you have any other questions you’d like answered please
             feel free to email us.
           </p>
-          <div class="questions__accordion">
+          <div>
             <div>What is Bookmark?<span>></span></div>
             <div>
               <p>
@@ -175,8 +179,13 @@
           </div>
           <a href="#">More Info</a>
         </section>
+        <!-- end questions -->
       </main>
+      <!-- end main -->
     </div>
+    <!-- end container -->
+
+    <!-- start subscribe -->
     <section class="subscribe">
       <p>35,000+ already joined</p>
       <h2>Stay up-to-date with what we’re doing</h2>
@@ -185,26 +194,30 @@
         <button type="submit">Contact Us</button>
       </form>
     </section>
-    <footer>
+    <!-- end subscribe -->
+
+    <!-- start footer -->
+    <footer class="footer">
       <a href="#"><img src="images/logo-bookmark.svg" alt="Bookmark company logo"/></a>
       <ul>
-        <li class=""><a href="#">Features</a></li>
-        <li class=""><a href="#">Pricing</a></li>
-        <li class=""><a href="#">Contact</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
       <ul>
-        <li class="">
+        <li>
           <a href="#"><img src="images/icon-facebook.svg"/></a>
         </li>
-        <li class="">
+        <li>
           <a href="#"><img src="images/icon-twitter.svg"/></a>
         </li>
       </ul>
-      <p class="attribution">
+      <p>
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer>
+    <!-- end footer -->
   </body>
 </html>
