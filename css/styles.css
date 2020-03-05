@@ -21,6 +21,7 @@ h6 {
   font-weight: 500;
 }
 
+/* to add a left, right padding for the whole website */
 .container {
   padding: 0 30px;
 }
