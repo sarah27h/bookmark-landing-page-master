@@ -1,0 +1,27 @@
+/* base styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+  color: #9194a1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+/* to add a left, right padding for the whole website */
+.container {
+  padding: 0 30px;
+}

@@ -9,40 +9,42 @@
 
     <title>Frontend Mentor | Bookmark landing page</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="#"><img src="images/logo-bookmark.svg" alt="Bookmark company logo"/></a>
-        <input
-          type="image"
-          class="hamburger-icon"
-          src="images/icon-hamburger.svg"
-          alt="Menu button"
-        />
-        <ul>
-          <li ><a href="#">Features</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact</a></li>
-          <li>
-            <a href="#">Login</a>
+    <!-- start navbar -->
+    <header class="navbar container">
+      <a class="logo" href="#"><img src="images/logo-bookmark.svg" alt="Bookmark company logo"/></a>
+      <input
+        type="image"
+        class="hamburger-icon"
+        src="images/icon-hamburger.svg"
+        alt="Menu button"
+      />
+      <nav class="navigation">
+        <ul class="navigation__menu">
+          <li class="navigation__item"><a href="#">Features</a></li>
+          <li class="navigation__item"><a href="#">Pricing</a></li>
+          <li class="navigation__item"><a href="#">Contact</a></li>
+          <li class="navigation__item">
+            <a class="navigation__item" href="#">Login</a>
           </li>
         </ul>
       </nav>
     </header>
-    <div>
+    <!-- end navbar -->
+
+    <!-- start container -->
+    <div class="container">
+      <!-- start main -->
       <main>
-        <section>
+        <!-- start intro -->
+        <section class="intro">
           <div>
             <h1>A Simple Bookmark Manager</h1>
             <p>
@@ -56,7 +58,10 @@
             <img src="images/illustration-hero.svg" alt="Illustration for bookmark app interface" />
           </div>
         </section>
-        <section>
+        <!-- end intro -->
+
+        <!-- start features -->
+        <section class="features">
           <h2>Features</h2>
           <p>
             Our aim is to make it quick and easy for you to access your favourite websites. Your
@@ -101,7 +106,10 @@
             <img src="images/illustration-features-tab-3.svg" alt="" />
           </div>
         </section>
-        <section>
+        <!-- end features -->
+
+        <!-- start download -->
+        <section class="download">
           <h2>Download the extension</h2>
           <p>
             We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite
@@ -126,21 +134,24 @@
             <a>Add & Install Extension</a>
           </div>
         </section>
-        <section>
+        <!-- end download -->
+
+        <!-- start questions -->
+        <section class="questions">
           <h2>Frequently Asked Questions</h2>
           <p>
             Here are some of our FAQs. If you have any other questions you’d like answered please
             feel free to email us.
           </p>
           <div>
-            <div>What is Bookmark?<apan>></apan></div>
+            <div>What is Bookmark?<span>></span></div>
             <div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget
                 ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
               </p>
             </div>
-            <div>How can I request a new browser?<apan>></apan></div>
+            <div>How can I request a new browser?<span>></span></div>
             <div>
               <p>
                 Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non
@@ -150,7 +161,7 @@
                 imperdiet.
               </p>
             </div>
-            <div>Is there a mobile app?<apan>></apan></div>
+            <div>Is there a mobile app?<span>></span></div>
             <div>
               <p>
                 Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor,
@@ -158,7 +169,7 @@
                 pharetra purus. Sed sollicitudin ex et ultricies bibendum.
               </p>
             </div>
-            <div>What about other Chromium browsers?<apan>></apan></div>
+            <div>What about other Chromium browsers?<span>></span></div>
             <div>
               <p>
                 Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod
@@ -168,17 +179,25 @@
           </div>
           <a href="#">More Info</a>
         </section>
+        <!-- end questions -->
       </main>
+      <!-- end main -->
     </div>
-    <section>
+    <!-- end container -->
+
+    <!-- start subscribe -->
+    <section class="subscribe">
       <p>35,000+ already joined</p>
       <h2>Stay up-to-date with what we’re doing</h2>
-      <form>
+      <form class="subscribe__form">
         <input type="email" value="" name="email" placeholder="Enter your email address" />
         <button type="submit">Contact Us</button>
       </form>
     </section>
-    <footer>
+    <!-- end subscribe -->
+
+    <!-- start footer -->
+    <footer class="footer">
       <a href="#"><img src="images/logo-bookmark.svg" alt="Bookmark company logo"/></a>
       <ul>
         <li><a href="#">Features</a></li>
@@ -199,5 +218,6 @@
         Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer>
+    <!-- end footer -->
   </body>
 </html>
