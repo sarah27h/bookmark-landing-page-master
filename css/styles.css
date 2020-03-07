@@ -25,3 +25,26 @@ h6 {
 .container {
   padding: 0 30px;
 }
+
+/* &&&&&&&&&&&&&&&& This is a trial css , that should be edited and moved to the proper place */
+/*Questions section:  */
+/* remove the in-built symbol 
+and replace it with image 'icon-arrow.svg' */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: url("../images/icon-arrow.svg");
+  float: right;
+}
+
+/*Change the color of the arrow when clicked*/
+details[open] summary::after {
+  content: url("../images/icon-arrow.svg");
+  display: inline-block;
+  transform: rotate(180deg);
+  filter: invert(200%) sepia(200%) saturate(200%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+/*End of trial css */
