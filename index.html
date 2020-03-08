@@ -17,20 +17,23 @@
 
 <body>
   <!-- start navbar -->
-  <header class="navbar container">
-    <a class="logo" href="#"><img src="images/logo-bookmark.svg" alt="Bookmark company logo" /></a>
-    <input type="image" class="hamburger-icon" src="images/icon-hamburger.svg" alt="Menu button" />
-    <nav class="navigation">
-      <ul class="navigation__menu">
-        <li class="navigation__item"><a href="#">Features</a></li>
-        <li class="navigation__item"><a href="#">Pricing</a></li>
-        <li class="navigation__item"><a href="#">Contact</a></li>
-        <li class="navigation__item">
-          <a class="navigation__item" href="#">Login</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <div class="container">
+    <header class="navbar">
+      <a class="navbar__logo" href="#"><img src="images/logo-bookmark.svg" alt="Bookmark company logo" /></a>
+      <input type="image" class="navbar__hamburger-icon" src="images/icon-hamburger.svg" alt="Menu button" />
+      <input type="image" class="navbar__close-icon hide" src="images/icon-close.svg" alt="Close button" />
+      <nav class="navigation hide">
+        <ul class="navigation__menu">
+          <li class="navigation__item"><a href="#">Features</a></li>
+          <li class="navigation__item"><a href="#">Pricing</a></li>
+          <li class="navigation__item"><a href="#">Contact</a></li>
+          <li class="navigation__item">
+            <a class="navigation__item" href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
   <!-- end navbar -->
 
   <!-- start container -->
@@ -110,11 +113,13 @@
 
       <!-- start download -->
       <section class="download">
-        <h2>Download the extension</h2>
-        <p>
-          We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite
-          you’d like us to prioritize.
-        </p>
+        <div class="download__primary">
+          <h2>Download the extension</h2>
+          <p>
+            We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite
+            you’d like us to prioritize.
+          </p>
+        </div>
         <div>
           <img src="images/logo-chrome.svg" alt="Chrome Logo" />
           <h3>Add to Chrome</h3>
@@ -225,6 +230,9 @@
     </p>
   </footer>
   <!-- end footer -->
+
+  <!-- scripts -->
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

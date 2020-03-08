@@ -1,3 +1,10 @@
+/**
+ This style sheet written in BEM
+
+ Block = .block
+ Element = .block__element
+ Modifier = .block--modifier , .block__element--modifier 
+
 /* base styles */
 
 * {
@@ -10,6 +17,7 @@ body {
   font-size: 18px;
   font-family: 'Rubik', sans-serif;
   color: #9194a1;
+  overflow-x: hidden;
 }
 
 h1,
@@ -19,6 +27,13 @@ h4,
 h5,
 h6 {
   font-weight: 500;
+  text-align: center;
+}
+
+p {
+  /* &&&&&&&&&&&&&&&& 
+  we need to increase to be 16px for medium, large screens */
+  font-size: 14px;
 }
 
 /* to add a left, right padding for the whole website */
@@ -26,6 +41,14 @@ h6 {
   padding: 0 30px;
 }
 
+/* 
+center images , 
+Take note that the bookmark image must be to the left of the page, adjustments have to be made
+*/
+img {
+  display: block;
+  margin: auto;  
+}
 /* &&&&&&&&&&&&&&&& This is a trial css , that should be edited and moved to the proper place */
 /*Questions section:  */
 /* remove the in-built symbol 
@@ -35,13 +58,13 @@ summary::-webkit-details-marker {
 }
 
 summary::after {
-  content: url("../images/icon-arrow.svg");
+  content: url('../images/icon-arrow.svg');
   float: right;
 }
 
 /*Change the color of the arrow when clicked*/
 details[open] summary::after {
-  content: url("../images/icon-arrow.svg");
+  content: url('../images/icon-arrow.svg');
   display: inline-block;
   transform: rotate(180deg);
   filter: invert(200%) sepia(200%) saturate(200%) hue-rotate(288deg) brightness(102%) contrast(102%);
