@@ -1,3 +1,10 @@
+/**
+ This style sheet written in BEM
+
+ Block = .block
+ Element = .block__element
+ Modifier = .block--modifier , .block__element--modifier 
+
 /* base styles */
 
 * {
