@@ -17,20 +17,23 @@
 
 <body>
   <!-- start navbar -->
-  <header class="navbar container">
-    <a class="logo" href="#"><img src="images/logo-bookmark.svg" alt="Bookmark company logo" /></a>
-    <input type="image" class="hamburger-icon" src="images/icon-hamburger.svg" alt="Menu button" />
-    <nav class="navigation">
-      <ul class="navigation__menu">
-        <li class="navigation__item"><a href="#">Features</a></li>
-        <li class="navigation__item"><a href="#">Pricing</a></li>
-        <li class="navigation__item"><a href="#">Contact</a></li>
-        <li class="navigation__item">
-          <a class="navigation__item" href="#">Login</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <div class="container">
+    <header class="navbar">
+      <a class="navbar__logo" href="#"><img src="images/logo-bookmark.svg" alt="Bookmark company logo" /></a>
+      <input type="image" class="navbar__hamburger-icon" src="images/icon-hamburger.svg" alt="Menu button" />
+      <input type="image" class="navbar__close-icon hide" src="images/icon-close.svg" alt="Close button" />
+      <nav class="navigation hide">
+        <ul class="navigation__menu">
+          <li class="navigation__item"><a href="#">Features</a></li>
+          <li class="navigation__item"><a href="#">Pricing</a></li>
+          <li class="navigation__item"><a href="#">Contact</a></li>
+          <li class="navigation__item">
+            <a class="navigation__item" href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
   <!-- end navbar -->
 
   <!-- start container -->
@@ -225,6 +228,9 @@
     </p>
   </footer>
   <!-- end footer -->
+
+  <!-- scripts -->
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
