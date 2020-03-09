@@ -42,13 +42,22 @@ p {
   padding: 0 30px;
 }
 
+.hide {
+  display: none;
+}
+
+.hide-yscroll {
+  overflow-y: hidden;
+}
+
 /* 
 center images , 
 Take note that the bookmark image must be to the left of the page, adjustments have to be made
 */
 img {
+  max-width: 100%; /* to get images fill 100% of the available width */
   display: block;
-  margin: auto;  
+  margin: auto;
 }
 /* &&&&&&&&&&&&&&&& This is a trial css , that should be edited and moved to the proper place */
 /*Questions section:  */
@@ -73,25 +82,104 @@ details[open] summary::after {
 
 /*End of trial css */
 
+/*************************** navbar ***************************/
+/* Blocks ********/
+.navbar {
+  width: 100%;
+  height: 94px;
+  position: fixed;
+  padding: 36px 30px;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
+  background: #fff;
+}
+
+.navigation {
+  position: absolute;
+  top: 94px;
+  right: 0;
+  width: 100%;
+  padding: 0 25px;
+  opacity: 1;
+  background: #2f354f;
+  text-align: center;
+  z-index: 20000;
+  /* to be able to align social icons to the bottom */
+  height: 80vh;
+}
+
+/* Elements ********/
+.navigation__menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation__item {
+  width: 100%;
+  padding: 22px 0;
+  border-top: 1px solid #4c526c;
+}
+
+.navigation__link {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  text-decoration: none;
+}
+
+.navigation__social {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  /* to center absolutely positioned element  */
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* Modifiers ********/
+.navbar--expand {
+  height: 100vh;
+  background: #2f354f;
+  align-items: flex-start;
+  opacity: 0.98;
+  overflow-y: scroll;
+}
+
+.navigation__link--nav-btn {
+  width: 100%;
+  display: block;
+  padding: 11px;
+  border: 2px solid #f7fafd;
+  border-radius: 12px 15px;
+}
+
 .download__primary {
   margin: 30px 10px;
 }
 
-.card { 
+.card {
   width: 67vw;
   text-align: center;
   /* padding: 36px 0;
   border: 1px solid dimgray; */
-  margin: 10px auto 25px;  
+  margin: 10px auto 25px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   box-shadow: 3px -3px 7px 3px #edecea;
-  
 }
 .card--button {
   width: 85%;
   margin: 0 auto 25px;
-  background-color:  hsl(231, 69%, 60%);
+  background-color: hsl(231, 69%, 60%);
   padding: 11px 10px;
   color: white;
   border-radius: 7px;
