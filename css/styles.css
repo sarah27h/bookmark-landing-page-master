@@ -34,6 +34,7 @@ p {
   /* &&&&&&&&&&&&&&&& 
   we need to increase to be 16px for medium, large screens */
   font-size: 14px;
+  text-align: center;
 }
 
 /* to add a left, right padding for the whole website */
@@ -159,4 +160,37 @@ details[open] summary::after {
   padding: 11px;
   border: 2px solid #f7fafd;
   border-radius: 12px 15px;
+}
+
+.download__primary {
+  margin: 30px 10px;
+}
+
+.card {
+  width: 67vw;
+  text-align: center;
+  /* padding: 36px 0;
+  border: 1px solid dimgray; */
+  margin: 10px auto 25px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px -3px 7px 3px #edecea;
+}
+.card--button {
+  width: 85%;
+  margin: 0 auto 25px;
+  background-color: hsl(231, 69%, 60%);
+  padding: 11px 10px;
+  color: white;
+  border-radius: 7px;
+}
+img.card__img {
+  margin-bottom: 39px;
+  margin-top: 52px;
+}
+h3.card__title {
+  margin-bottom: 15px;
+}
+.card__details {
+  margin-bottom: 71px;
 }
