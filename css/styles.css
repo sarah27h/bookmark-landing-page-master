@@ -65,7 +65,6 @@ img {
   margin: auto;
 }
 
-
 /*************************** navbar ***************************/
 /* Blocks ********/
 .navbar {
@@ -87,7 +86,6 @@ img {
   width: 100%;
   padding: 0 25px;
   opacity: 1;
-  background: #2f354f;
   text-align: center;
   z-index: 20000;
   /* to be able to align social icons to the bottom */
@@ -109,8 +107,8 @@ img {
 }
 
 .navigation__link {
-  font-size: 18px;
-  letter-spacing: 1.5px;
+  font-size: 16px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: #fcfcfc;
   text-decoration: none;
@@ -132,7 +130,7 @@ img {
 /* Modifiers ********/
 .navbar--expand {
   height: 100vh;
-  background: #2f354f;
+  background: #252b46;
   align-items: flex-start;
   opacity: 0.98;
   overflow-y: scroll;
@@ -147,6 +145,18 @@ img {
   border-radius: 12px 15px;
 }
 
+.logo__text--white-theme {
+  fill: #fff;
+}
+
+.logo__circle--white-theme {
+  fill: #fff;
+}
+
+.logo__bookmark--blue-theme {
+  fill: #252b46;
+}
+
 /*MAIN SECTION
  &&&&&&&&&&&&&&&& This is a trial css , that should be edited and moved to the proper place */
 /*Questions section:  */
@@ -156,7 +166,7 @@ summary::-webkit-details-marker {
   display: none;
 }
 summary {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 500;
   padding: 30px 0;
   border-bottom: 1px solid black;
@@ -246,7 +256,7 @@ a.moreInfo {
 .subscribe__title {
   padding-bottom: 35px;
 }
-.subscribe__form {
+form.subscribe__form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

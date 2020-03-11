@@ -11,13 +11,13 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Soft Blue: hsl(231, 69%, 60%) buttons color
-- Soft Red: hsl(0, 94%, 66%) buttons color
+- Soft Blue: hsl(231, 69%, 60%) #5368df buttons color
+- Soft Red: hsl(0, 94%, 66%) #fa5757 buttons color
 
 ### Neutral
 
-- Grayish Blue: hsl(229, 8%, 60%) paragraphs text color
-- Very Dark Blue: hsl(229, 31%, 21%) heading color
+- Grayish Blue: hsl(229, 8%, 60%) #9194a1 paragraphs text color
+- Very Dark Blue: hsl(229, 31%, 21%) #252b46 heading color
 
 ## Typography
 
