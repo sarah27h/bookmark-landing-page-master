@@ -219,10 +219,25 @@ a.moreInfo {
   display: block;
   margin: auto;
   text-align: center;
-  background-color: blue;
+  background-color: hsl(231, 69%, 60%);
   padding: 10px 0;
   text-decoration: none;
   color: white;
   margin-top: 49px;
   border-radius: 5px;
+}
+
+.footer {
+  width: 377px;
+  margin: auto;
+  background: hsl(231, 69%, 60%);
+  color: white;
+}
+.subscribe__details {
+  padding-top: 77px;
+  letter-spacing: 0.3rem;
+  padding-bottom: 28px;
+}
+.subscribe__title {
+  padding-bottom: 35px;
 }
