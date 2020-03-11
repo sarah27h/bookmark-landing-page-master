@@ -118,6 +118,7 @@ img {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+  align-items: baseline;
   /* to center absolutely positioned element  */
   width: 50%;
   position: absolute;
