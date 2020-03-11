@@ -73,6 +73,7 @@ img {
   vertical-align: middle;
   align-items: center;
   background: #fff;
+  transition: height 0.2s linear 0.01s;
 }
 
 .navigation {
@@ -130,6 +131,7 @@ img {
   align-items: flex-start;
   opacity: 0.98;
   overflow-y: scroll;
+  transition: height 0.5s linear 0.25s;
 }
 
 .navigation__link--nav-btn {
