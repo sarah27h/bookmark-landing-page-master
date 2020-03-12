@@ -193,9 +193,7 @@ details[open] summary::after {
 
 .card {
   width: 67vw;
-  text-align: center;
-  /* padding: 36px 0;
-  border: 1px solid dimgray; */
+  text-align: center;  
   margin: 10px auto 25px;
   display: flex;
   flex-direction: column;
@@ -209,17 +207,17 @@ details[open] summary::after {
   color: white;
   border-radius: 7px;
 }
-img.card__img {
+.card__img {
   margin-bottom: 39px;
   margin-top: 52px;
 }
-h3.card__title {
+.card__title {
   margin-bottom: 15px;
 }
 .card__details {
   margin-bottom: 71px;
 }
-section.questions {
+.questions {
   width: 67vw;
   margin: 143px auto 50px;
 }
@@ -244,7 +242,7 @@ a.moreInfo {
 }
 
 .footer {
-  width: 90vw; /* 377px;*/
+  width: 100%; 
   margin: auto;
   background: hsl(231, 69%, 60%);
   color: white;
@@ -276,11 +274,18 @@ input[type="email"], .subscribe--btn {
 .aboutUs {
   background-color:  hsl(229, 31%, 21%);
 }
-.aboutUs__img {
-  filter: invert(119%) sepia(18%) saturate(200%) hue-rotate(271deg) brightness(180%) contrast(213%);
+footer .logo {
+  display: block;
+  text-align: center;
+ /* filter: invert(119%) sepia(18%) saturate(200%) hue-rotate(271deg) brightness(180%) contrast(213%); */
   padding-top: 42px;
   margin-bottom: 48px;
   z-index: 1;
+}
+
+/*change footer logo text from blue to white */
+footer path.logo__text {
+  fill: white;
 }
 
 .features {
