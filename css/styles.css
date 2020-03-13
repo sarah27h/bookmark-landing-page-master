@@ -18,6 +18,9 @@ body {
   font-family: 'Rubik', sans-serif;
   color: #9194a1;
   overflow-x: hidden;
+  /* to avoid top fixed navbar overlapping the next section */
+  /* https://stackoverflow.com/questions/11124777/twitter-bootstrap-navbar-fixed-top-overlapping-site */
+  padding-top: 94px;
 }
 
 h1,
@@ -71,6 +74,10 @@ img {
   width: 100%;
   height: 94px;
   position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 20000;
   padding: 36px 30px;
   display: flex;
   justify-content: space-between;
@@ -193,7 +200,7 @@ details[open] summary::after {
 
 .card {
   width: 67vw;
-  text-align: center;  
+  text-align: center;
   margin: 10px auto 25px;
   display: flex;
   flex-direction: column;
@@ -244,7 +251,7 @@ a.moreInfo {
 }
 
 .footer {
-  width: 100%; 
+  width: 100%;
   margin: auto;
   background: hsl(231, 69%, 60%);
   color: white;
@@ -280,7 +287,7 @@ input[type='email'],
 footer .logo {
   display: block;
   text-align: center;
- /* filter: invert(119%) sepia(18%) saturate(200%) hue-rotate(271deg) brightness(180%) contrast(213%); */
+  /* filter: invert(119%) sepia(18%) saturate(200%) hue-rotate(271deg) brightness(180%) contrast(213%); */
   padding-top: 42px;
   margin-bottom: 48px;
   z-index: 1;
