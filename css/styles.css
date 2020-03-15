@@ -69,6 +69,7 @@ img {
 }
 
 /* reuable Blocks ********/
+
 .section-padding {
   padding: 40px 0 100px;
 }
@@ -336,6 +337,7 @@ input[type='email'], .subscribe--btn {
 
 .aboutUs {
   background-color: hsl(229, 31%, 21%);
+  padding-bottom: 44px;
 }
 
 footer .logo {
@@ -362,6 +364,7 @@ footer path.logo__text {
 
 .features li {
   margin-bottom: 40px;
+  list-style-type: none;
 }
 
 .footer__social {
@@ -390,8 +393,37 @@ footer path.logo__text {
   .card {
     height: 54vh;
   }
-
   .opera {
     align-self: flex-end;
+  }
+  .aboutUs {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-bottom: 32px;
+  }
+  .features {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .features li {
+    margin-bottom: 0;
+    margin-right: 48px;
+  }
+  .footer__social {
+    align-items: center;
+  }
+  form.subscribe__form {
+    flex-direction: row;
+    padding-bottom: 70px;
+    justify-content: center;
+  }
+  input[type='email'], .subscribe--btn {
+    width: 24vw;
+    padding: 20px 0;
+    margin: 0 5px 0;
+  }
+  .subscribe--btn {
+    width: 10vw;
   }
 }
