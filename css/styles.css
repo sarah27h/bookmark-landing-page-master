@@ -17,21 +17,17 @@ body {
   font-size: 18px;
   font-family: 'Rubik', sans-serif;
   color: #9194a1;
-  overflow-x: hidden;
+  background-color: #fff;
   /* to avoid top fixed navbar overlapping the next section */
   /* https://stackoverflow.com/questions/11124777/twitter-bootstrap-navbar-fixed-top-overlapping-site */
-  padding-top: 94px;
+  padding-top: 110px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   text-align: center;
 }
+
 a {
   color: white;
   text-decoration: none;
@@ -40,12 +36,14 @@ a {
 p {
   /* &&&&&&&&&&&&&&&& 
   we need to increase to be 16px for medium, large screens */
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
-  line-height: 200%; /*double the line spacing */
+  line-height: 200%;
+  /*double the line spacing */
 }
 
 /* to add a left, right padding for the whole website */
+
 .container {
   padding: 0 30px;
 }
@@ -62,17 +60,51 @@ p {
 center images , 
 Take note that the bookmark image must be to the left of the page, adjustments have to be made
 */
+
 img {
-  max-width: 100%; /* to get images fill 100% of the available width */
+  max-width: 100%;
+  /* to get images fill 100% of the available width */
   display: block;
   margin: auto;
 }
 
+/* reuable Blocks ********/
+.section-padding {
+  padding: 40px 0 100px;
+}
+
+.heading--primary {
+  color: #252b46;
+}
+
+.heading--secondary {
+  color: #9194a1;
+}
+
+.heading-level-alpha {
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.heading-level-beta {
+  font-size: 25px;
+}
+
+.heading-level-gamma {
+  font-size: 24px;
+}
+
+.heading-level-normal {
+  font-size: 16px;
+}
+
 /*************************** navbar ***************************/
+
 /* Blocks ********/
+
 .navbar {
   width: 100%;
-  height: 94px;
+  height: 110px;
   position: fixed;
   left: 0;
   right: 0;
@@ -89,7 +121,7 @@ img {
 
 .navigation {
   position: absolute;
-  top: 94px;
+  top: 110px;
   right: 0;
   width: 100%;
   padding: 0 25px;
@@ -101,6 +133,7 @@ img {
 }
 
 /* Elements ********/
+
 .navigation__menu {
   list-style: none;
   display: flex;
@@ -122,7 +155,7 @@ img {
   text-decoration: none;
 }
 
-.navigation__social {
+.navigation__social, .footer__social {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
@@ -136,6 +169,7 @@ img {
 }
 
 /* Modifiers ********/
+
 .navbar--expand {
   height: 100vh;
   background: #252b46;
@@ -167,24 +201,30 @@ img {
 
 /*MAIN SECTION
  &&&&&&&&&&&&&&&& This is a trial css , that should be edited and moved to the proper place */
+
 /*Questions section:  */
+
 /* remove the in-built symbol 
 and replace it with image 'icon-arrow.svg' */
+
 summary::-webkit-details-marker {
   display: none;
 }
+
 summary {
   font-size: 0.9rem;
   font-weight: 500;
   padding: 30px 0;
   border-bottom: 1px solid black;
 }
+
 summary::after {
   content: url('../images/icon-arrow.svg');
   float: right;
 }
 
 /*Change the color of the arrow when clicked*/
+
 details[open] summary::after {
   content: url('../images/icon-arrow.svg');
   display: inline-block;
@@ -206,6 +246,7 @@ details[open] summary::after {
   flex-direction: column;
   box-shadow: 3px -3px 7px 3px #edecea;
 }
+
 .card--button {
   width: 85%;
   margin: 0 auto 25px;
@@ -214,25 +255,31 @@ details[open] summary::after {
   color: white;
   border-radius: 7px;
 }
+
 .card__img {
   margin-bottom: 39px;
   margin-top: 52px;
 }
+
 .card__title {
   margin-bottom: 15px;
 }
+
 .card__details {
   padding-bottom: 40px;
   margin-bottom: 30px;
   border-bottom: 5px dotted grey;
 }
+
 .questions {
   width: 67vw;
   margin: 143px auto 50px;
 }
+
 .questions__title {
   margin-bottom: 20px;
 }
+
 .questions__details {
   margin-bottom: 30px;
 }
@@ -256,34 +303,40 @@ a.moreInfo {
   background: hsl(231, 69%, 60%);
   color: white;
 }
+
 .subscribe__details {
   padding-top: 77px;
   letter-spacing: 0.3rem;
   padding-bottom: 28px;
 }
+
 .subscribe__title {
   padding-bottom: 35px;
 }
+
 form.subscribe__form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-input[type='email'],
-.subscribe--btn {
+
+input[type='email'], .subscribe--btn {
   width: 84%;
   padding: 16px 0;
   margin: auto auto 16px;
   border-radius: 7px;
 }
+
 .subscribe--btn {
   margin-bottom: 62px;
   background-color: hsl(0, 94%, 66%);
   color: white;
 }
+
 .aboutUs {
   background-color: hsl(229, 31%, 21%);
 }
+
 footer .logo {
   display: block;
   text-align: center;
@@ -294,6 +347,7 @@ footer .logo {
 }
 
 /*change footer logo text from blue to white */
+
 footer path.logo__text {
   fill: white;
 }
@@ -304,9 +358,28 @@ footer path.logo__text {
   justify-items: center;
   text-align: center;
 }
+
 .features li {
   margin-bottom: 40px;
 }
-footer .navigation__social {
+
+.footer__social {
   position: relative;
+  align-items: baseline;
+}
+
+/* Media queries size is temporary */
+
+/*Desktop view */
+
+@media only screen and (min-width: 1281px) {
+  .cards {
+    display: flex;
+    margin: auto 260px;
+  }
+  .firefox {
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
 }
