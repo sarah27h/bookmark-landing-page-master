@@ -41,7 +41,7 @@ a {
 p {
   /* &&&&&&&&&&&&&&&& 
   we need to increase to be 16px for medium, large screens */
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
   line-height: 200%; /*double the line spacing */
 }
@@ -80,6 +80,23 @@ img {
 
 .heading--secondary {
   color: #9194a1;
+}
+
+.heading-level-alpha {
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.heading-level-beta {
+  font-size: 25px;
+}
+
+.heading-level-gamma {
+  font-size: 24px;
+}
+
+.heading-level-normal {
+  font-size: 16px;
 }
 
 /*************************** navbar ***************************/
