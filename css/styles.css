@@ -17,10 +17,10 @@ body {
   font-size: 18px;
   font-family: 'Rubik', sans-serif;
   color: #9194a1;
-  overflow-x: hidden;
+  background-color: #fff;
   /* to avoid top fixed navbar overlapping the next section */
   /* https://stackoverflow.com/questions/11124777/twitter-bootstrap-navbar-fixed-top-overlapping-site */
-  padding-top: 94px;
+  padding-top: 110px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,7 +36,7 @@ a {
 p {
   /* &&&&&&&&&&&&&&&& 
   we need to increase to be 16px for medium, large screens */
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
   line-height: 200%;
   /*double the line spacing */
@@ -68,13 +68,43 @@ img {
   margin: auto;
 }
 
+/* reuable Blocks ********/
+.section-padding {
+  padding: 40px 0 100px;
+}
+
+.heading--primary {
+  color: #252b46;
+}
+
+.heading--secondary {
+  color: #9194a1;
+}
+
+.heading-level-alpha {
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.heading-level-beta {
+  font-size: 25px;
+}
+
+.heading-level-gamma {
+  font-size: 24px;
+}
+
+.heading-level-normal {
+  font-size: 16px;
+}
+
 /*************************** navbar ***************************/
 
 /* Blocks ********/
 
 .navbar {
   width: 100%;
-  height: 94px;
+  height: 110px;
   position: fixed;
   left: 0;
   right: 0;
@@ -91,7 +121,7 @@ img {
 
 .navigation {
   position: absolute;
-  top: 94px;
+  top: 110px;
   right: 0;
   width: 100%;
   padding: 0 25px;
