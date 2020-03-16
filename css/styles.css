@@ -245,6 +245,49 @@ img {
   fill: #252b46;
 }
 
+/*************************** intro ***************************/
+/* Blocks ********/
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Modifiers ********/
+
+.intro__img {
+  /* to align image with other sections*/
+  /* to get image fill full width as it has a shadow ???
+  ask for another way to do that */
+  margin: 0 -20px;
+  position: relative;
+}
+
+.intro__img:before {
+  content: '';
+  background-color: #5368df;
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  right: -50px;
+  z-index: -100;
+  top: 50px;
+  border-radius: 0 0 0 100px;
+}
+
+.intro__text {
+  padding-top: 57px;
+}
+
+.intro__heading {
+  margin-bottom: 16px;
+}
+
+.intro__btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
 /*MAIN SECTION
  &&&&&&&&&&&&&&&& This is a trial css , that should be edited and moved to the proper place */
 
