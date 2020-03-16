@@ -201,8 +201,7 @@ img {
 }
 
 /*MAIN SECTION
- &&&&&&&&&&&&&&&& This is a trial css , that should be edited and moved to the proper place */
-
+ 
 /*Questions section:  */
 
 /* remove the in-built symbol 
@@ -213,7 +212,7 @@ summary::-webkit-details-marker {
 }
 
 summary {
-  font-size: 0.9rem;
+ /* font-size: 0.9rem; */
   font-weight: 500;
   padding: 30px 0;
   border-bottom: 1px solid black;
@@ -232,8 +231,6 @@ details[open] summary::after {
   transform: rotate(180deg);
   filter: invert(200%) sepia(200%) saturate(200%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
-
-/*End of trial css */
 
 .download__primary {
   margin: 159px auto 37px;
@@ -377,6 +374,9 @@ footer path.logo__text {
 /*Desktop view */
 
 @media only screen and (min-width: 1281px) {
+  p {
+    font-size: 18px;
+  }
   .cards {
     display: flex;
     margin: auto 260px;
@@ -425,5 +425,8 @@ footer path.logo__text {
   }
   .subscribe--btn {
     width: 10vw;
+  }
+  details p {
+    text-align: start;
   }
 }
