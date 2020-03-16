@@ -37,11 +37,23 @@
     <input type="image" class="navbar__close-icon hide" src="images/icon-close.svg" alt="Close button" />
     <nav class="navigation hide">
       <ul class="navigation__menu">
-        <li class="navigation__item"><a class="navigation__link" href="#">Features</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#">Pricing</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#">Contact</a></li>
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--nav-btn" href="#">Login</a>
+          <a class="navigation__link" href="#">
+            Features
+          </a>
+          </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">
+            Pricing
+          </a>
+          </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">
+            Contact
+          </a>
+          </li>
+        <li class="navigation__item">
+          <a class="navigation__link btn btn--block btn--outline" href="#">Login</a>
         </li>
       </ul>
       <ul class="navigation__social hide">
@@ -62,17 +74,19 @@
     <main>
       <!-- start intro -->
       <section class="intro section-padding">
+        <div class="intro__img">
+          <img src="images/illustration-hero.svg" alt="Illustration for bookmark app interface" />
+        </div>
         <div class="intro__text">
-          <h1 class="heading--primary heading-level-alpha">A Simple Bookmark Manager</h1>
+          <h1 class="intro__heading heading--primary heading-level-alpha">A Simple Bookmark Manager</h1>
           <p>
             A clean and simple interface to organize your favourite websites. Open a new browser
             tab and see your sites load instantly. Try it for free.
           </p>
-          <a class="" href="#">Get it on Chrome</a>
-          <a class="" href="#">Get it on Firefox</a>
-        </div>
-        <div class="intro__img">
-          <img src="images/illustration-hero.svg" alt="Illustration for bookmark app interface" />
+          <div class="intro__btns">
+            <a class="btn btn--blue" href="#">Get it on Chrome</a>
+            <a class="btn" href="#">Get it on Firefox</a>
+          </div>
         </div>
       </section>
       <!-- end intro -->
@@ -102,7 +116,7 @@
               Organize your bookmarks however you like. Our simple drag-and-drop interface gives
               you complete control over how you manage your favourite sites.
             </p>
-            <a href="#">More Info</a>
+            <a class="btn btn--blue" href="#">More Info</a>
           </div>
           <img src="images/illustration-features-tab-1.svg" alt="" loading="lazy" />
         </div>
@@ -113,7 +127,7 @@
               Our powerful search feature will help you find saved sites in no time at all. No
               need to trawl through all of your bookmarks.
             </p>
-            <a href="#">More Info</a>
+            <a class="btn btn--blue" href="#">More Info</a>
           </div>
           <img src="images/illustration-features-tab-2.svg" alt="" loading="lazy" />
         </div>
@@ -124,7 +138,7 @@
               Easily share your bookmarks and collections with others. Create a shareable link
               that you can send at the click of a button.
             </p>
-            <a href="#">More Info</a>
+            <a class="btn btn--blue" href="#">More Info</a>
           </div>
           <img src="images/illustration-features-tab-3.svg" alt="" loading="lazy" />
         </div>
@@ -133,42 +147,44 @@
 
       <!-- start download -->
       <section class="download">
-        <div class="download__primary">
+        <hearder class="download__header">
           <h2 class="heading--primary heading-level-beta">Download the extension</h2>
           <p>
             We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite
             you’d like us to prioritize.
           </p>
-        </div>
+        </hearder>
         <div class="card">
           <img class="card__img" src="images/logo-chrome.svg" alt="Chrome Logo" />
           <h3 class="card__title heading--primary">Add to Chrome</h3>
           <p class="card__details">Minimum version 62</p>
-          <a class="card--button">Add & Install Extension</a>
+          <a class="btn btn--block btn--blue">Add & Install Extension</a>
         </div>
         <div class="card">
-          <img class="card__img" src="images/logo-chrome.svg" alt="Chrome Logo" />
+          <img class="card__img" src="images/logo-firefox.svg" alt="Chrome Logo" />
           <h3 class="card__title heading--primary">Add to Firefox</h3>
           <p class="card__details">Minimum version 55</p>
-          <a class="card--button">Add & Install Extension</a>
+          <a class="btn btn--block btn--blue">Add & Install Extension</a>
         </div>
         <div class="card">
-          <img class="card__img" src="images/logo-chrome.svg" alt="Chrome Logo" />
+          <img class="card__img" src="images/logo-opera.svg" alt="Chrome Logo" />
           <h3 class="card__title heading--primary">Add to Opera</h3>
           <p class="card__details">Minimum version 46</p>
-          <a class="card--button">Add & Install Extension</a>
+          <a class="btn btn--block btn--blue">Add & Install Extension</a>
         </div>
       </section>
       <!-- end download -->
 
       <!-- start questions -->
       <section class="questions">
-        <h2 class="questions__title heading--primary heading-level-beta">Frequently Asked Questions</h2>
-        <p class="questions__details">
-          Here are some of our FAQs. If you have any other questions you’d like answered please
-          feel free to email us.
-        </p>
-        <div>
+        <hearder class="questions__header">
+          <h2 class="questions__title heading--primary heading-level-beta">Frequently Asked Questions</h2>
+          <p class="questions__text">
+            Here are some of our FAQs. If you have any other questions you’d like answered please
+            feel free to email us.
+          </p>
+        </hearder>
+        <div class="questions__details">
           <details>
             <summary> What is Bookmark? </summary>
 
@@ -208,7 +224,8 @@
               dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.
             </p>
           </details>
-          <a class="moreInfo" href="#">More Info</a>
+          </div>
+          <a class="btn btn--blue" href="#">More Info</a>
       </section>
       <!-- end questions -->
     </main>
@@ -224,8 +241,8 @@
       <p class="subscribe__details">35,000+ already joined</p>
       <h2 class="subscribe__title heading-level-beta">Stay up-to-date with what we’re doing</h2>
       <form class="subscribe__form">
-        <input type="email" value="" name="email" placeholder="Enter your email address" />
-        <button class="subscribe--btn" type="submit">Contact Us</button>
+        <input class="subscribe__input" type="email" value="" name="email" placeholder="Enter your email address" />
+        <button class="btn btn--red btn--block btn--noshadow" type="submit">Contact Us</button>
       </form>
     </section>
     <!-- end subscribe -->

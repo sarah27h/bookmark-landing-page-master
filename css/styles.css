@@ -108,7 +108,7 @@ img {
   font-size: 14px;
   font-weight: 500;
   border: none;
-  border-radius: 5px;
+  border-radius: 7px;
   cursor: pointer;
   box-shadow: 0px 9px 8px #dadadb;
   background: #f7f7f9;
@@ -280,17 +280,39 @@ details[open] summary::after {
 
 /*End of trial css */
 
-.download__primary {
+.download {
+  padding: 0 20px;
+}
+
+.download__header {
   margin: 159px auto 37px;
 }
 
 .card {
-  width: 67vw;
+  max-width: 280px;
   text-align: center;
-  margin: 10px auto 25px;
+  margin-bottom: 55px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   box-shadow: 3px -3px 7px 3px #edecea;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* to add dotted border in the card */
+.card::after {
+  content: ' ';
+  background-image: url(../images/bg-dots.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
 }
 
 .card--button {
@@ -314,23 +336,27 @@ details[open] summary::after {
 .card__details {
   padding-bottom: 40px;
   margin-bottom: 30px;
-  border-bottom: 5px dotted grey;
 }
 
 .questions {
-  width: 67vw;
+  width: 100%;
   margin: 143px auto 50px;
+  text-align: center;
 }
 
 .questions__title {
   margin-bottom: 20px;
 }
 
-.questions__details {
+.questions__text {
   margin-bottom: 30px;
 }
 
-a.moreInfo {
+.questions__details {
+  margin-bottom: 50px;
+}
+
+/* .moreInfo {
   width: 118px;
   display: block;
   margin: auto;
@@ -341,7 +367,7 @@ a.moreInfo {
   color: white;
   margin-top: 49px;
   border-radius: 5px;
-}
+} */
 
 .footer {
   width: 100%;
@@ -357,21 +383,22 @@ a.moreInfo {
 }
 
 .subscribe__title {
-  padding-bottom: 35px;
+  /* padding-bottom: 35px; */
 }
 
-form.subscribe__form {
+.subscribe__form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding: 30px 30px 60px;
 }
 
-input[type='email'],
-.subscribe--btn {
-  width: 84%;
-  padding: 16px 0;
+.subscribe__input {
+  width: 100%;
+  padding: 16px 20px;
   margin: auto auto 16px;
   border-radius: 7px;
+  border: none;
 }
 
 .subscribe--btn {
