@@ -23,7 +23,12 @@ body {
   padding-top: 110px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 500;
   text-align: center;
 }
@@ -98,6 +103,46 @@ img {
   font-size: 16px;
 }
 
+.btn {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 9px 8px #dadadb;
+  background: #f7f7f9;
+  color: #333;
+  text-decoration: none;
+  padding: 0 16px;
+  line-height: 48px;
+  height: 48px;
+}
+
+.btn--block {
+  display: block;
+}
+
+.btn--red {
+  background: #fa5757;
+  color: #ffffff;
+}
+
+.btn--blue {
+  background: #5368df;
+  color: #ffffff;
+}
+
+.btn--outline {
+  border: 2px solid #f7fafd;
+  background: transparent;
+  box-shadow: none;
+}
+
+.btn--noshadow {
+  box-shadow: none;
+}
+
 /*************************** navbar ***************************/
 
 /* Blocks ********/
@@ -155,7 +200,8 @@ img {
   text-decoration: none;
 }
 
-.navigation__social, .footer__social {
+.navigation__social,
+.footer__social {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
@@ -320,7 +366,8 @@ form.subscribe__form {
   flex-wrap: wrap;
 }
 
-input[type='email'], .subscribe--btn {
+input[type='email'],
+.subscribe--btn {
   width: 84%;
   padding: 16px 0;
   margin: auto auto 16px;
@@ -381,5 +428,5 @@ footer path.logo__text {
     margin-top: 40px;
     margin-left: 30px;
     margin-right: 30px;
-}
+  }
 }
