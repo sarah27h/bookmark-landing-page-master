@@ -74,6 +74,7 @@ img {
 }
 
 /* reuable Blocks ********/
+
 .section-padding {
   padding: 40px 0 100px;
 }
@@ -289,8 +290,7 @@ img {
 }
 
 /*MAIN SECTION
- &&&&&&&&&&&&&&&& This is a trial css , that should be edited and moved to the proper place */
-
+ 
 /*Questions section:  */
 
 /* remove the in-built symbol 
@@ -301,7 +301,7 @@ summary::-webkit-details-marker {
 }
 
 summary {
-  font-size: 0.9rem;
+ /* font-size: 0.9rem; */
   font-weight: 500;
   padding: 30px 0;
   border-bottom: 1px solid black;
@@ -321,6 +321,7 @@ details[open] summary::after {
   filter: invert(200%) sepia(200%) saturate(200%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
+<<<<<<< HEAD
 /*End of trial css */
 
 .download {
@@ -328,6 +329,13 @@ details[open] summary::after {
 }
 
 .download__header {
+||||||| merged common ancestors
+/*End of trial css */
+
+.download__primary {
+=======
+.download__primary {
+>>>>>>> 033dc2e43f46280c339517ffaa605aacda4c2895
   margin: 159px auto 37px;
 }
 
@@ -339,6 +347,7 @@ details[open] summary::after {
   display: flex;
   flex-direction: column;
   box-shadow: 3px -3px 7px 3px #edecea;
+<<<<<<< HEAD
   border-radius: 5px;
   position: relative;
 }
@@ -356,6 +365,10 @@ details[open] summary::after {
   bottom: 100px;
   left: 0;
   right: 0;
+||||||| merged common ancestors
+=======
+  border-radius: 10px;
+>>>>>>> 033dc2e43f46280c339517ffaa605aacda4c2895
 }
 
 .card--button {
@@ -452,6 +465,7 @@ details[open] summary::after {
 
 .aboutUs {
   background-color: hsl(229, 31%, 21%);
+  padding-bottom: 44px;
 }
 
 footer .logo {
@@ -478,6 +492,7 @@ footer path.logo__text {
 
 .features li {
   margin-bottom: 40px;
+  list-style-type: none;
 }
 
 .footer__social {
@@ -490,13 +505,67 @@ footer path.logo__text {
 /*Desktop view */
 
 @media only screen and (min-width: 1281px) {
+  p {
+    font-size: 18px;
+  }
   .cards {
     display: flex;
     margin: auto 260px;
+    height: 70vh;
+    /*set height to allow vertical alignment set height to card
+    as well so start the cards won't stretch to fit container */
   }
   .firefox {
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    align-self: center;
     margin-left: 30px;
     margin-right: 30px;
+<<<<<<< HEAD
   }
 }
+||||||| merged common ancestors
+}
+}
+=======
+  }
+  .card {
+    height: 54vh;
+  }
+  .opera {
+    align-self: flex-end;
+  }
+  .aboutUs {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-bottom: 32px;
+  }
+  .features {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .features li {
+    margin-bottom: 0;
+    margin-right: 48px;
+  }
+  .footer__social {
+    align-items: center;
+  }
+  form.subscribe__form {
+    flex-direction: row;
+    padding-bottom: 70px;
+    justify-content: center;
+  }
+  input[type='email'], .subscribe--btn {
+    width: 24vw;
+    padding: 20px 0;
+    margin: 0 5px 0;
+  }
+  .subscribe--btn {
+    width: 10vw;
+  }
+  details p {
+    text-align: start;
+  }
+}
+>>>>>>> 033dc2e43f46280c339517ffaa605aacda4c2895
