@@ -502,21 +502,22 @@ footer path.logo__text {
     font-size: 18px;
   }
   .cards {
-    display: flex;
+    flex-wrap: nowrap;
     margin: auto 260px;
     height: 70vh;
     /*set height to allow vertical alignment set height to card
     as well so start the cards won't stretch to fit container */
   }
+  .chrome {
+    align-self: flex-start;
+}
   .firefox {
     /* margin-top: 40px; */
     align-self: center;
     margin-left: 30px;
     margin-right: 30px;
   }
-  .card {
-    height: 54vh;
-  }
+ 
   .opera {
     align-self: flex-end;
   }
