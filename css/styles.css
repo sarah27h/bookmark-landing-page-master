@@ -496,21 +496,14 @@ footer path.logo__text {
 
 /* Media queries size is temporary */
 
-/*Desktop view */
+@media only screen and (min-width: 700px) {
+  /*Medium view */
 
-@media only screen and (min-width: 1281px) {
-  .container {
-    padding: 0 170px;
-  }
-
-  p {
-    font-size: 18px;
-  }
   .cards {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(1, minmax(430px, 500px));
-    grid-column-gap: 70px;
+    grid-column-gap: 30px;
   }
 
   .chrome {
@@ -523,6 +516,21 @@ footer path.logo__text {
 
   .opera {
     align-self: flex-end;
+  }
+}
+
+/*Desktop view */
+
+@media only screen and (min-width: 1281px) {
+  .container {
+    padding: 0 170px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+  .cards {
+    grid-column-gap: 70px;
   }
 
   .aboutUs {
