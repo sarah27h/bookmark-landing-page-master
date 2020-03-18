@@ -398,11 +398,14 @@ details[open] summary::after {
 /*End of trial css */
 
 .download {
-  padding: 0 20px;
 }
 
 .download__header {
   margin: 159px auto 37px;
+}
+
+.download__heading {
+  margin: 20px 0;
 }
 
 .cards {
